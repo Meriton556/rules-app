@@ -28,11 +28,11 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-900/40 p-4">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-900/40 p-4">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
           <h1 className="text-2xl font-bold text-white mb-2">XponentL Coding Rules</h1>
-          <p className="text-emerald-400/80">Sign in to contribute and manage your coding rules</p>
+          <p className="text-blue-400">Sign in to contribute and manage your coding rules</p>
         </div>
         <LoginForm />
       </div>

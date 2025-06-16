@@ -71,9 +71,9 @@ export default function LoginForm({ initialMode = 'signin' }: LoginFormProps) {
   };
 
   return (
-    <Card className="w-full max-w-md mx-auto bg-zinc-900 border border-emerald-800/60 shadow-lg shadow-emerald-900/20">
+    <Card className="w-full max-w-md mx-auto bg-zinc-900 border border-blue-800/60 shadow-lg shadow-blue-900/20">
       <CardHeader className="border-b border-zinc-800">
-        <CardTitle className="text-emerald-500">{mode === 'signin' ? 'Sign In' : 'Create Account'}</CardTitle>
+        <CardTitle className="text-blue-500">{mode === 'signin' ? 'Sign In' : 'Create Account'}</CardTitle>
         <CardDescription className="text-zinc-400">
           {mode === 'signin' 
             ? 'Enter your credentials to access your account' 
@@ -82,13 +82,13 @@ export default function LoginForm({ initialMode = 'signin' }: LoginFormProps) {
       </CardHeader>
       <CardContent className="pt-6">
         {registrationSuccess ? (
-          <Alert className="bg-emerald-900/30 text-emerald-300 border border-emerald-800/50">
+          <Alert className="bg-blue-900/30 text-blue-300 border border-blue-800/50">
             <AlertDescription>
               Registration successful! Please check your email to confirm your account. Redirecting to login page...
             </AlertDescription>
           </Alert>
         ) : loginSuccess ? (
-          <Alert className="bg-emerald-900/30 text-emerald-300 border border-emerald-800/50">
+          <Alert className="bg-blue-900/30 text-blue-300 border border-blue-800/50">
             <AlertDescription>
               Login successful! You will be redirected shortly...
             </AlertDescription>
@@ -111,7 +111,7 @@ export default function LoginForm({ initialMode = 'signin' }: LoginFormProps) {
                   onChange={(e) => setDisplayName(e.target.value)}
                   placeholder="Your name"
                   required={mode === 'signup'}
-                  className="border-zinc-800 bg-zinc-800 focus:border-emerald-700 focus:ring-emerald-800/20 text-zinc-200 focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="border-zinc-800 bg-zinc-800 focus:border-blue-700 focus:ring-blue-800/20 text-zinc-200 focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </div>
             )}
@@ -125,7 +125,7 @@ export default function LoginForm({ initialMode = 'signin' }: LoginFormProps) {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="name@example.com"
                 required
-                className="border-zinc-800 bg-zinc-800 focus:border-emerald-700 focus:ring-emerald-800/20 text-zinc-200 focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="border-zinc-800 bg-zinc-800 focus:border-blue-700 focus:ring-blue-800/20 text-zinc-200 focus-visible:ring-0 focus-visible:ring-offset-0"
               />
             </div>
             
@@ -138,13 +138,13 @@ export default function LoginForm({ initialMode = 'signin' }: LoginFormProps) {
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
                 required
-                className="border-zinc-800 bg-zinc-800 focus:border-emerald-700 focus:ring-emerald-800/20 text-zinc-200 focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="border-zinc-800 bg-zinc-800 focus:border-blue-700 focus:ring-blue-800/20 text-zinc-200 focus-visible:ring-0 focus-visible:ring-offset-0"
               />
             </div>
             
             <Button 
               type="submit" 
-              className="w-full bg-gradient-to-r from-emerald-700 to-emerald-800 hover:from-emerald-700 hover:to-emerald-900 text-emerald-50 shadow-md" 
+              className="w-full bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-blue-50 shadow-md" 
               disabled={loading}
             >
               {loading ? 'Loading...' : mode === 'signin' ? 'Sign In' : 'Sign Up'}
@@ -155,7 +155,7 @@ export default function LoginForm({ initialMode = 'signin' }: LoginFormProps) {
       <CardFooter className="border-t border-zinc-800">
         <Button 
           variant="link" 
-          className="w-full text-emerald-500/90 hover:text-emerald-400" 
+          className="w-full text-blue-500/90 hover:text-blue-400" 
           onClick={toggleMode} 
           disabled={registrationSuccess || loginSuccess}
         >

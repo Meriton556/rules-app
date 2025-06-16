@@ -44,7 +44,7 @@ export default function UserMenu() {
         <Button variant="ghost" className="rounded-md h-14 flex items-center gap-2 border-0 px-4">
           <Avatar className="h-10 w-10">
             <AvatarImage src={user.user_metadata?.avatar_url || ""} />
-            <AvatarFallback className="bg-emerald-600 text-white text-xl font-bold">
+            <AvatarFallback className="bg-blue-600 text-white text-xl font-bold">
               {userInitials}
             </AvatarFallback>
           </Avatar>

@@ -68,7 +68,7 @@ export default function NewRulePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-900/40 overflow-auto flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-900/40 overflow-auto flex items-center justify-center">
       <div className="max-w-3xl w-full px-4 py-8 animate-fadeIn">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold text-white bg-clip-text bg-gradient-to-r from-white to-zinc-400">

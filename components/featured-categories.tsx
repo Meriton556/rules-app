@@ -41,26 +41,26 @@ export default function FeaturedCategories() {
   const colorMap: Record<string, string> = {
     "TypeScript": "bg-blue-500/20 text-blue-400",
     "React": "bg-cyan-500/20 text-cyan-400",
-    "Node.js": "bg-green-500/20 text-green-400", 
+    "Node.js": "bg-blue-500/20 text-blue-400",
     "Frontend": "bg-yellow-500/20 text-yellow-400",
     "Security": "bg-red-500/20 text-red-400",
     "Web": "bg-purple-500/20 text-purple-400",
-    "Python": "bg-green-500/20 text-green-400",
+    "Python": "bg-blue-500/20 text-blue-400",
     "Git": "bg-orange-500/20 text-orange-400",
     "React Router": "bg-cyan-500/20 text-cyan-400",
     "Redux": "bg-purple-500/20 text-purple-400",
     "Zustand": "bg-yellow-500/20 text-yellow-400",
     "React Query": "bg-red-500/20 text-red-400",
     "SQL": "bg-blue-500/20 text-blue-400",
-    "NoSQL": "bg-green-500/20 text-green-400",
+    "NoSQL": "bg-blue-500/20 text-blue-400",
     "Graph": "bg-indigo-500/20 text-indigo-400",
     "CI/CD": "bg-orange-500/20 text-orange-400",
     "AWS": "bg-orange-500/20 text-orange-400",
     "Azure": "bg-blue-500/20 text-blue-400",
     "Google Cloud": "bg-red-500/20 text-red-400",
-    "Unit Testing": "bg-green-500/20 text-green-400",
+    "Unit Testing": "bg-blue-500/20 text-blue-400",
     "Flask": "bg-gray-500/20 text-gray-400",
-    "FastAPI": "bg-teal-500/20 text-teal-400",
+    "FastAPI": "bg-blue-500/20 text-blue-400",
     "SASS/SCSS": "bg-pink-500/20 text-pink-400"
   };
 
@@ -105,13 +105,13 @@ export default function FeaturedCategories() {
         <h2 className="text-2xl font-bold">Featured Categories</h2>
         <Link 
           href="/category/all" 
-          className="text-white relative group overflow-hidden px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500/10 to-yellow-500/10 hover:from-emerald-500/20 hover:to-yellow-500/20 transition-all duration-300"
+          className="text-white relative group overflow-hidden px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-yellow-500/10 hover:from-blue-500/20 hover:to-yellow-500/20 transition-all duration-300"
         >
-          <span className="relative z-10 font-medium text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-yellow-400 group-hover:from-emerald-300 group-hover:to-yellow-300">
+          <span className="relative z-10 font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400 group-hover:from-blue-300 group-hover:to-yellow-300">
             View All
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
           </span>
-          <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-emerald-500/50 to-yellow-500/50 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+          <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-blue-500/50 to-yellow-500/50 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </Link>
       </div>
 

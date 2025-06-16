@@ -25,7 +25,7 @@ const officialRules = [
     title: "Use PNPM Instead of NPM",
     description: "Benefits of using PNPM over NPM for JavaScript/TypeScript projects",
     content: "- Faster installation\n- Disk space efficient\n- Strict dependency resolution\n- Prevents phantom dependencies\n- Better monorepo support with workspaces",
-    icon: <Package className="h-10 w-10 text-green-400" />,
+    icon: <Package className="h-10 w-10 text-blue-400" />,
     category: "Frontend",
     tags: [],
     authorName: "",
@@ -111,13 +111,13 @@ export default function FeaturedRules() {
         <h2 className="text-2xl font-bold">Featured Rules</h2>
         <Link 
           href="/category/general" 
-          className="text-white relative group overflow-hidden px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500/10 to-yellow-500/10 hover:from-emerald-500/20 hover:to-yellow-500/20 transition-all duration-300"
+          className="text-white relative group overflow-hidden px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-yellow-500/10 hover:from-blue-500/20 hover:to-yellow-500/20 transition-all duration-300"
         >
-          <span className="relative z-10 font-medium text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-yellow-400 group-hover:from-emerald-300 group-hover:to-yellow-300">
+          <span className="relative z-10 font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-yellow-400 group-hover:from-blue-300 group-hover:to-yellow-300">
             View All General Rules 
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
           </span>
-          <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-emerald-500/50 to-yellow-500/50 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+          <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-blue-500/50 to-yellow-500/50 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
         </Link>
       </div>
 

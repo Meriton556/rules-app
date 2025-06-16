@@ -98,12 +98,12 @@ export default function ToolBestPracticesPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-950/30">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-950/30">
       {/* Top Header - Fixed */}
       <div className="bg-transparent py-3 px-6 flex-shrink-0 z-10">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <svg className="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="h-5 w-5 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
             <Link href="/" className="text-lg font-medium text-white">
@@ -163,7 +163,7 @@ export default function ToolBestPracticesPage() {
           </div>
           <Button
             asChild
-            className={`bg-${toolColor}-600 hover:bg-${toolColor}-700 text-white`}
+            className="bg-blue-600 hover:bg-blue-700 text-white"
           >
             <Link href={`/best-practices/add?tool=${tool}`} className="flex items-center gap-2">
               <Plus className="w-4 h-4" />
@@ -194,7 +194,7 @@ export default function ToolBestPracticesPage() {
                   <Textarea
                     value={editContent}
                     onChange={(e) => setEditContent(e.target.value)}
-                    className="w-full min-h-[100px] bg-zinc-900/50 border-zinc-700/50 text-white text-lg resize-none hover:border-emerald-800/50 focus:border-emerald-800/50 transition-colors"
+                    className="w-full min-h-[100px] bg-zinc-900/50 border-zinc-700/50 text-white text-lg resize-none hover:border-blue-800/50 focus:border-blue-800/50 transition-colors"
                   />
                   <div className="flex justify-end gap-2">
                     <Button

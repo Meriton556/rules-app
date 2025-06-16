@@ -24,7 +24,7 @@ export default function Home() {
   // Show loading state while checking authentication
   if (loading || redirecting || !user) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-900/40">
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-900/40">
         <div className="text-white">
           {loading ? "Loading..." : "Redirecting to login..."}
         </div>

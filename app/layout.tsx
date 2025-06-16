@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="dark">
       <body className={cn(
         inter.className,
-        "min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-900/40"
+        "min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-900/40"
       )}>
         <AuthProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

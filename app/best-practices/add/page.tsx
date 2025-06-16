@@ -123,12 +123,12 @@ export default function AddBestPracticePage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-950/30">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-950/30">
       {/* Top Header - Fixed */}
       <div className="bg-transparent py-3 px-6 flex-shrink-0 z-10">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="h-5 w-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
             <Link href="/" className="text-lg font-medium text-white">
@@ -168,11 +168,11 @@ export default function AddBestPracticePage() {
             <div className="flex items-center gap-4">
               <Link 
                 href="/best-practices"
-                className="text-emerald-600 hover:text-emerald-500 transition-colors"
+                className="text-blue-600 hover:text-blue-500 transition-colors"
               >
                 <ArrowLeft className="w-5 h-5" />
               </Link>
-              <h1 className="text-xl font-bold text-emerald-600">Add Best Practice</h1>
+              <h1 className="text-xl font-bold text-blue-600">Add Best Practice</h1>
             </div>
             <div className="flex items-center gap-2">
               <Switch
@@ -189,7 +189,7 @@ export default function AddBestPracticePage() {
             <div className={`grid ${isCombined ? 'grid-cols-2' : 'grid-cols-1'} gap-6`}>
               {/* Primary Tool */}
               <div className="space-y-2">
-                <label className="text-sm font-medium text-emerald-600">
+                <label className="text-sm font-medium text-blue-600">
                   {isCombined ? 'Primary Tool' : 'Tool'}
                 </label>
                 <Select
@@ -230,7 +230,7 @@ export default function AddBestPracticePage() {
               {/* Secondary Tool */}
               {isCombined && (
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-emerald-600">
+                  <label className="text-sm font-medium text-blue-600">
                     Secondary Tool
                   </label>
                   <Select

@@ -633,7 +633,7 @@ export default function CategoryPage() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-900/40">
+      <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-900/40">
         <div className="text-white">Loading rules...</div>
       </div>
     )
@@ -1011,9 +1011,9 @@ export default function CategoryPage() {
               
               <pre className="text-[15px] font-mono text-[#bbbbbb] flex flex-col h-full overflow-auto leading-[1.6]">
                 {/* Header */}
-                <span className="text-emerald-400 text-[15px] font-medium"># AI Rules for {'{project-name}'}</span>
+                <span className="text-blue-400 text-[15px] font-medium"># AI Rules for {'{project-name}'}</span>
                 <span className="h-[0.65rem]"></span>
-                <span className="text-emerald-300 text-[15px]">{'{project-description}'}</span>
+                <span className="text-blue-300 text-[15px]">{'{project-description}'}</span>
                 <span className="h-[0.65rem]"></span>
                 
                 {selectedRules.length > 0 ? (
@@ -1112,9 +1112,9 @@ export default function CategoryPage() {
             </div>
             
             <pre className="text-base font-mono text-white flex flex-col gap-2 pr-16">
-              <span className="text-emerald-400 text-lg font-semibold"># AI Rules for {'{project-name}'}</span>
+              <span className="text-blue-400 text-lg font-semibold"># AI Rules for {'{project-name}'}</span>
               <span></span>
-              <span className="text-emerald-300 text-lg">{'{project-description}'}</span>
+              <span className="text-blue-300 text-lg">{'{project-description}'}</span>
             </pre>
           </div>
 
@@ -1311,7 +1311,7 @@ export default function CategoryPage() {
                 }
               }}
               disabled={!customTemplate.trim()}
-              className="px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-emerald-700 transition-colors"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors"
             >
               Apply Custom
             </button>
@@ -1382,12 +1382,12 @@ export default function CategoryPage() {
                   else if (category.toLowerCase().includes("react")) countBadgeColor = "bg-blue-700 text-blue-200";
                   else if (category.toLowerCase().includes("next")) countBadgeColor = "bg-slate-700 text-slate-200";
                   else if (category.toLowerCase().includes("node") || category.toLowerCase().includes("express")) countBadgeColor = "bg-lime-700 text-lime-200";
-                  else if (category.toLowerCase().includes("python")) countBadgeColor = "bg-green-700 text-green-200";
+                  else if (category.toLowerCase().includes("python")) countBadgeColor = "bg-blue-700 text-blue-200";
                   else if (category.toLowerCase().includes("database")) countBadgeColor = "bg-purple-700 text-purple-200";
                   else if (category.toLowerCase().includes("devops")) countBadgeColor = "bg-pink-700 text-pink-200";
                   else if (category.toLowerCase().includes("typescript")) countBadgeColor = "bg-blue-800 text-blue-200";
                   else if (category.toLowerCase().includes("javascript")) countBadgeColor = "bg-yellow-700 text-yellow-100";
-                  else countBadgeColor = "bg-emerald-700 text-emerald-200";
+                  else countBadgeColor = "bg-blue-700 text-blue-200";
                 }
                 
                 return (
@@ -1429,13 +1429,13 @@ export default function CategoryPage() {
                               onClick={() => toggleRuleSelection(rule)}
                               className={`flex items-center px-3 py-2 rounded-lg cursor-pointer mb-1 ${
                                 isSelected 
-                                  ? 'bg-emerald-900/20 border border-emerald-500/50 text-emerald-400' 
+                                  ? 'bg-blue-900/20 border border-blue-500/50 text-blue-400' 
                                   : 'hover:bg-zinc-800/70 text-zinc-400 border border-transparent'
                               }`}
                             >
                               <div className={`w-4 h-4 rounded-full mr-3 flex items-center justify-center ${
                                 isSelected 
-                                  ? 'bg-emerald-500 text-white' 
+                                  ? 'bg-blue-500 text-white' 
                                   : 'border border-zinc-600'
                               }`}>
                                 {isSelected && (
@@ -1447,7 +1447,7 @@ export default function CategoryPage() {
                               <div className="flex-1 flex items-center">
                                 <span className="truncate">{rule.title || 'Untitled'}</span>
                                 {rule.isOfficial && (
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
+                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                   </svg>
                                 )}
@@ -1507,7 +1507,7 @@ export default function CategoryPage() {
                       onClick={() => setSelectedExportTarget(target)}
                       className={`px-3 py-1 text-sm rounded-full font-medium ${
                         selectedExportTarget === target 
-                          ? 'bg-emerald-800 text-white' 
+                          ? 'bg-blue-800 text-white' 
                           : 'bg-zinc-700 text-zinc-300 hover:bg-zinc-600'
                       }`}
                     >
@@ -1768,6 +1768,7 @@ export default function CategoryPage() {
                     <div 
                       key={i} 
                       className={`${
+                        line.trim().startsWith('-') ? 'text-blue-400 group-hover:text-blue-300 group-hover:font-medium' : 
                         line.trim().startsWith('-') ? 'text-emerald-400 group-hover:text-emerald-300 group-hover:font-medium' : 
                         isNumberedLine ? 'text-[#85bfff] group-hover:text-[#b8dfff] group-hover:font-medium' :
                         line.trim().startsWith('Key Principles') || 
@@ -1973,7 +1974,7 @@ export default function CategoryPage() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-emerald-900/40" onClick={closeTooltip}>
+    <div className="flex flex-col h-screen bg-gradient-to-br from-zinc-950 via-zinc-900 to-blue-900/40" onClick={closeTooltip}>
       {/* Add custom scrollbar style */}
       <style jsx global>{`
         /* Make scrollbar extremely thin */
@@ -2007,7 +2008,7 @@ export default function CategoryPage() {
       <div className="bg-transparent py-3 px-6 flex-shrink-0 z-10">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <svg className="h-5 w-5 text-emerald-500" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="h-5 w-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
             <Link href="/" className="text-lg font-medium text-white">
@@ -2068,7 +2069,7 @@ export default function CategoryPage() {
           {/* Submit Button - Fixed at Bottom */}
           <div className="p-4 border-t border-zinc-800/30 bg-zinc-900/80 backdrop-blur-sm sticky bottom-0 w-full mt-0 z-20">
             <Link href={`/rules/new?returnCategory=${encodeURIComponent(activeCategoryName)}${filterType === 'official' ? '&isOfficial=true' : ''}`}>
-              <button className="w-full flex items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-500 text-white py-2.5 px-4 rounded-lg transition-all duration-200 transform hover:scale-[1.02] hover:from-emerald-700 hover:to-teal-600">
+              <button className="w-full flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-500 text-white py-2.5 px-4 rounded-lg transition-all duration-200 transform hover:scale-[1.02] hover:from-blue-700 hover:to-blue-600">
                 <span className="font-medium">Add Rule</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clipRule="evenodd" />

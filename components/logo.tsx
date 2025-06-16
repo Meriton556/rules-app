@@ -7,7 +7,7 @@ interface LogoProps {
 export default function Logo({ className = "w-6 h-6" }: LogoProps) {
   return (
     <div className={`relative ${className}`}>
-      <Cube className="text-emerald-500 w-full h-full" />
+      <Cube className="text-blue-500 w-full h-full" />
     </div>
   )
 }

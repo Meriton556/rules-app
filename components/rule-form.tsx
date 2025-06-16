@@ -268,15 +268,15 @@ export default function RuleForm({
                 id="general-rule" 
                 checked={isGeneral}
                 onCheckedChange={(checked) => setIsGeneral(checked === true)}
-                className="border-zinc-400 data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-emerald-500 data-[state=checked]:to-blue-500 data-[state=checked]:border-transparent h-4 w-4 transition-all duration-200 rounded-sm"
+                className="border-zinc-400 data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-blue-500 data-[state=checked]:to-blue-500 data-[state=checked]:border-transparent h-4 w-4 transition-all duration-200 rounded-sm"
               />
               <Label 
                 htmlFor="general-rule" 
                 className="text-sm font-medium flex items-center gap-1 cursor-pointer group"
               >
-                <span className="flex items-center gap-1 p-1 px-2 rounded-full bg-gradient-to-r from-emerald-500/10 to-blue-500/10 group-hover:from-emerald-500/20 group-hover:to-blue-500/20 transition-all duration-200">
-                  <Wrench className="h-4 w-4 text-emerald-400 group-hover:text-emerald-300 transition-colors" />
-                  <span className="text-white group-hover:text-emerald-300 transition-colors font-semibold">General Tool</span>
+                <span className="flex items-center gap-1 p-1 px-2 rounded-full bg-gradient-to-r from-blue-500/10 to-blue-500/10 group-hover:from-blue-500/20 group-hover:to-blue-500/20 transition-all duration-200">
+                  <Wrench className="h-4 w-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
+                  <span className="text-white group-hover:text-blue-300 transition-colors font-semibold">General Tool</span>
                 </span>
               </Label>
             </div>
@@ -370,7 +370,7 @@ export default function RuleForm({
             onChange={handleTagChange}
             placeholder="Add a tag"
             disabled={isSubmitting || tags.length >= MAX_TAGS}
-            className="flex h-8 w-full rounded-md border border-zinc-700 bg-zinc-800/50 px-3 py-1 text-sm ring-offset-background text-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:font-['Poppins'] placeholder:text-zinc-400 placeholder:italic placeholder:text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex h-8 w-full rounded-md border border-zinc-700 bg-zinc-800/50 px-3 py-1 text-sm ring-offset-background text-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:font-['Poppins'] placeholder:text-zinc-400 placeholder:italic placeholder:text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
                 e.preventDefault();
@@ -399,7 +399,7 @@ export default function RuleForm({
             }}
             variant="outline" 
             disabled={isSubmitting || tags.length >= MAX_TAGS}
-            className="border-zinc-700 bg-emerald-600 hover:bg-emerald-700 text-white flex items-center gap-1 h-8 py-0"
+            className="border-zinc-700 bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-1 h-8 py-0"
           >
             Add Tag
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down h-4 w-4">
@@ -479,7 +479,7 @@ export default function RuleForm({
       <Button 
         type="submit" 
         disabled={isSubmitting || Object.keys(errors).length > 0}
-        className="w-full bg-emerald-600 hover:bg-emerald-700 text-white h-9 mt-2"
+        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition-colors duration-200"
       >
         {buttonText}
       </Button>
